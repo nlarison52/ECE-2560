@@ -96,9 +96,7 @@ skp_cmp:	inc.w R5						;Incrementing counter
 			jmp loop
 
 
-odd:		call #xtimes3					;Odd case handled in subroutine
-			inc.w R7
-			adc.w R6
+odd:		call #x3plus1					;Odd case handled in subroutine
 			jmp loop
 
 exit_srt:
@@ -109,11 +107,11 @@ exit_srt:
 ;-------------------------------------------------------------------------------
 ; Subroutine: x3plus1
 ; Input:  unsigned 32-bit number x in R7, R6 -- changes R7, R6
-; Output: unsigned 32-bit number y in R7, R6 -- y = x + x + x
+; Output: unsigned 32-bit number y in R7, R6 -- y = x + x + x + 1
 ;
 ; Changes R6 and R7. All other core registers remain the same
 ;-------------------------------------------------------------------------------
-xtimes3:
+x3plus1:
 					;Preserving registers
 			push R9
 			push R10
@@ -129,6 +127,9 @@ xtimes3:
 			add.w R10, R7
 			addc.w R9, R6
 
+
+			inc.w R7						;Adding 1 to result
+			adc.w R6
 
 skp_add:	pop R9							;Retrieving values
 			pop R10
