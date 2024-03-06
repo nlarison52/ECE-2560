@@ -2,7 +2,7 @@
 <link_info>
    <banner>MSP430 Linker Unix v21.6.1.LTS</banner>
    <copyright>Copyright (c) 2003-2018 Texas Instruments Incorporated</copyright>
-   <link_time>0x65e8dbd5</link_time>
+   <link_time>0x65e8df02</link_time>
    <link_errors>0x0</link_errors>
    <output_file>quiz5_hard_mode.out</output_file>
    <entry_point>
@@ -474,20 +474,20 @@
          <name>.debug_info</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0xfe</size>
+         <size>0x100</size>
          <input_file_ref idref="fl-2"/>
       </object_component>
       <object_component id="oc-609">
          <name>.debug_info</name>
-         <load_address>0xfe</load_address>
-         <run_address>0xfe</run_address>
+         <load_address>0x100</load_address>
+         <run_address>0x100</run_address>
          <size>0xf6</size>
          <input_file_ref idref="fl-2a"/>
       </object_component>
       <object_component id="oc-672">
          <name>.debug_info</name>
-         <load_address>0x1f4</load_address>
-         <run_address>0x1f4</run_address>
+         <load_address>0x1f6</load_address>
+         <run_address>0x1f6</run_address>
          <size>0xa4</size>
       </object_component>
       <object_component id="oc-7e">
@@ -1276,7 +1276,7 @@
          <name>.debug_info</name>
          <load_address>0x0</load_address>
          <run_address>0x0</run_address>
-         <size>0x298</size>
+         <size>0x29a</size>
          <contents>
             <object_component_ref idref="oc-7b"/>
             <object_component_ref idref="oc-609"/>

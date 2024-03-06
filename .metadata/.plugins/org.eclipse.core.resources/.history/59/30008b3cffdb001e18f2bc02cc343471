@@ -79,7 +79,7 @@ Collatz:
 			clr.w R5						;R5 is the counter register
 			clr.w R6
 											;MSW = most significant word
-loop:		tst R6							;Checks MSW is nonzero, skips cmp
+loop:		bit.w #0xffff, R6				;Checks MSW is nonzero, skips cmp
 			jnz skp_cmp
 											;R7 = LSW, R6 = MSW
 			cmp #1, R7						;Checks LSW == 1 and exits if so
@@ -96,7 +96,7 @@ skp_cmp:	inc.w R5						;Incrementing counter
 			jmp loop
 
 
-odd:		call #x_times_3					;Odd case handled in subroutine
+odd:		call #xtimes3					;Odd case handled in subroutine
 			inc.w R7
 			adc.w R6
 			jmp loop
@@ -107,13 +107,13 @@ exit_srt:
 			ret
 
 ;-------------------------------------------------------------------------------
-; Subroutine: x_times_3
+; Subroutine: x3plus1
 ; Input:  unsigned 32-bit number x in R7, R6 -- changes R7, R6
 ; Output: unsigned 32-bit number y in R7, R6 -- y = x + x + x
 ;
 ; Changes R6 and R7. All other core registers remain the same
 ;-------------------------------------------------------------------------------
-x_times_3:
+xtimes3:
 					;Preserving registers
 			push R9
 			push R10
