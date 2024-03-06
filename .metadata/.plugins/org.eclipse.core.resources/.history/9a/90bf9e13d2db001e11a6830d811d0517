@@ -50,7 +50,7 @@ read_array:
 			mov.w	R5, k_array(R4)
 			incd.w	R4
 			cmp.w	#LENGTH, R4
-			jnz read_array
+			jlo		read_array
 
 
 
@@ -90,9 +90,24 @@ skp_cmp:	inc.w R5						;Incrementing counter
 			bit.w #1, R7					;Check if R7 is odd
 			jnz odd
 
-			clrc
-			rrc.w R6
-			rrc.w R7
+			rra.w R7						;Divides the LSW
+			rra.w R6						;Divides the MSW
+			jnc skp_car						;Skips the carry operation if
+											;MSW did not have a bit in in the
+											;least significant bit
+
+			bit.w #MSB, R7					;Checks the most sig bit in R7
+											;MSB = 32768
+			jnz loop						;if nonzero, it does not need to
+											;be added
+
+			add.w #MSB, R7					;If MSB is zero, it must be
+			jmp loop						;incremented b/c the bit from
+											;MSW bust be rolled over to LSW
+
+skp_car:	bit.w #MSB, R7					;If no carry, MSB in LSW must be
+			jz loop							;removed if present because it
+			sub.w #MSB, R7					;was added as padding in rra
 			jmp loop
 
 

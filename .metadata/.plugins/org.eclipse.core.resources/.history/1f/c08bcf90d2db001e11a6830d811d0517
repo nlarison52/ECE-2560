@@ -44,14 +44,19 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 
 			clr.w	R4
 
-read_array:
-			mov.w	x_array(R4), R5
-			call	#Collatz
-			mov.w	R5, k_array(R4)
-			incd.w	R4
-			cmp.w	#LENGTH, R4
-			jnz read_array
+;read_array:
+;;			mov.w	x_array(R4), R5
+;			call	#Collatz
+;			mov.w	R5, k_array(R4)
+;			incd.w	R4
+;			cmp.w	#LENGTH, R4
+;			jlo		read_array
+			mov.w #4, R4
+			mov.w #1, R5
 
+			clrc
+			rrc.w R5
+			rrc.w R4
 
 
 

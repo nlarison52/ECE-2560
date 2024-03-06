@@ -50,7 +50,7 @@ read_array:
 			mov.w	R5, k_array(R4)
 			incd.w	R4
 			cmp.w	#LENGTH, R4
-			jnz read_array
+			jz read_array
 
 
 
