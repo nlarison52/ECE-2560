@@ -6770,3 +6770,551 @@ Finished building target: "quiz5_hard_mode.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/quiz" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building file: "../main1.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/quiz" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main1.d_raw"  "../main1.asm"
+Finished building: "../main1.asm"
+ 
+Building target: "quiz.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"quiz.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="quiz_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "quiz.out" "./main.obj" "./main1.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+error #10056: symbol "RESET" redefined: first defined in "./main.obj"; redefined in "./main1.obj"
+"../lnk_msp430fr6989.cmd", line 256: error #10099-D: program will not fit into available memory, or the section contains a call site that requires a trampoline that can't be generated for this section. placement with alignment fails for section ".reset" size 0x4.  Available memory ranges:
+   RESET        size: 0x2          unused: 0x2          max hole: 0x2       
+error #10010: errors encountered during linking; "quiz.out" not built
+ 
+>> Compilation failure
+makefile:136: recipe for target 'quiz.out' failed
+gmake[1]: *** [quiz.out] Error 1
+gmake: *** [all] Error 2
+makefile:132: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building target: "quiz.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"quiz.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="quiz_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "quiz.out" "./main.obj" "./main1.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+error #10056: symbol "RESET" redefined: first defined in "./main.obj"; redefined in "./main1.obj"
+"../lnk_msp430fr6989.cmd", line 256: error #10099-D: program will not fit into available memory, or the section contains a call site that requires a trampoline that can't be generated for this section. placement with alignment fails for section ".reset" size 0x4.  Available memory ranges:
+   RESET        size: 0x2          unused: 0x2          max hole: 0x2       
+error #10010: errors encountered during linking; "quiz.out" not built
+ 
+gmake[1]: *** [quiz.out] Error 1
+>> Compilation failure
+makefile:136: recipe for target 'quiz.out' failed
+gmake: *** [all] Error 2
+makefile:132: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building target: "quiz.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"quiz.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="quiz_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "quiz.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "quiz.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'quiz.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/quiz" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+1 Assembly Error, No Assembly Warnings
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.asm", ERROR!   at line 33: [E0004] Immediate/Absolute/Symbolic expression expected
+				mov.w #SP, R5
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/quiz" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "quiz.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"quiz.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="quiz_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "quiz.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "quiz.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'quiz.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/quiz" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "quiz.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"quiz.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="quiz_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "quiz.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "quiz.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project quiz ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'quiz.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project testing ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/testing" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "testing.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"testing.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="testing_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "testing.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "testing.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project testing ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'testing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project testing ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/testing" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "testing.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"testing.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="testing_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "testing.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "testing.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project testing ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'testing.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project testing ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/testing" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "testing.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"testing.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="testing_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "testing.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "testing.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 clean -O 
+ 
+rm -rf  "testing.out" 
+rm -rf "main.obj" 
+rm -rf "main.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+3 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.asm", ERROR!   at line 67: [E0001] Undefined symbol
+				jz end
+ 
+"../main.asm", ERROR!   at line 84: [E0004] Illegal destination operand
+				pop #0
+ 
+"../main.asm", ERROR!   at EOF: [E0300] The following symbols are undefined:
+  end
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'subroutine_dev.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'subroutine_dev.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'subroutine_dev.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****

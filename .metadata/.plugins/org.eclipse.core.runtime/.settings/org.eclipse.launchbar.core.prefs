@@ -1,7 +1,7 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:Class,org.eclipse.launchbar.core.descriptorType.default\:midterm,org.eclipse.launchbar.core.descriptorType.default\:quiz,org.eclipse.launchbar.core.descriptorType.default\:quiz5,org.eclipse.launchbar.core.descriptorType.default\:quiz5_hard_mode
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:New_configuration,org.eclipse.launchbar.core.descriptorType.default\:Class,org.eclipse.launchbar.core.descriptorType.default\:midterm,org.eclipse.launchbar.core.descriptorType.default\:quiz5,org.eclipse.launchbar.core.descriptorType.default\:quiz5_hard_mode,org.eclipse.launchbar.core.descriptorType.default\:quiz,org.eclipse.launchbar.core.descriptorType.default\:subroutine_dev
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:Class/activeLaunchMode=debug
 org.eclipse.launchbar.core.descriptorType.default\:New_configuration/activeLaunchMode=run
