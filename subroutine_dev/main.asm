@@ -26,10 +26,10 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 
 
 
-			push #10
-			push #250
+			push #-1
+			push #-20
+			push #0
 			push #2
-			push #24
 			decd.w SP
 			decd.w SP
 			call #x_times_y
@@ -59,7 +59,7 @@ main:		jmp main
 ; 				|	y	| <-12(SP)
 ;
 ;
-; Function takes two 32 bit unsigned integers in the stack and returns a 32 bit
+; Function takes two 32 bit signed integers in the stack and returns a 32 bit
 ; signed int to the stack
 ;-------------------------------------------------------------------------------
 x_times_y:
@@ -80,8 +80,8 @@ skp_tst:
 			addc.w 14(SP), 6(SP)
 
 rolls:
-			clrc
-			rrc.w 10(SP)
+
+			rra.w 10(SP)
 			rrc.w 8(SP)
 
 			clrc
