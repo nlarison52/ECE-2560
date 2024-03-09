@@ -24,22 +24,14 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ; Main loop here
 ;-------------------------------------------------------------------------------
 
+			push #4
+			push #6
+
+			call #x_plus_y
+
+			add.w #4, SP
 
 
-			push #-1
-			push #-20
-			push #0
-			push #2
-			decd.w SP
-			decd.w SP
-			call #x_times_y
-
-
-
-
-			pop R4
-			pop R5
-			add.w #8, SP
 
 
 
@@ -95,6 +87,46 @@ end:
 			ret
 
 
+
+
+
+
+;-------------------------------------------------------------------------------
+; Subroutine: x_plus_y
+; Stack Frame:
+;
+;				| loc x |<- -4(EBP)
+;				| loc y |<- -2(EBP)
+;				|EBP/R15|<-EBP/R15
+;				|	PC	|<-2(EBP)
+; 				|	x	|<-4(EBP)
+; 				|	y	| <-6(EBP)
+;
+;
+; Function takes two 32 bit signed integers in the stack and returns a 32 bit
+; signed int to the stack
+;-------------------------------------------------------------------------------
+
+x_plus_y:	push R15
+			mov.w SP, R15
+			sub.w #4, SP
+
+			mov.w 4(R15), R4
+			mov.w R4, -4(R15)
+
+			mov.w 6(R15), R4
+			mov.w R4, -2(R15)
+
+			mov.w -4(R15), R4
+			add.w -2(R15), R4
+
+
+
+
+
+			mov.w R15, SP
+			pop R15
+			ret
 
 
 
