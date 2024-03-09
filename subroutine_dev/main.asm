@@ -24,17 +24,14 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ; Main loop here
 ;-------------------------------------------------------------------------------
 
-			push #4
-			push #6
+			push #5
+			push #0
+			push #1
 
-			call #x_plus_y
-
-			add.w #4, SP
-
+			call #fib
 
 
-
-
+			add.w #6, SP
 
 
 
@@ -92,48 +89,37 @@ end:
 
 
 ;-------------------------------------------------------------------------------
-; Subroutine: x_plus_y
+; Subroutine: fib
 ; Stack Frame:
 ;
-;				| loc x |<- -4(EBP)
-;				| loc y |<- -2(EBP)
-;				|EBP/R15|<-EBP/R15
-;				|	PC	|<-2(EBP)
-; 				|	x	|<-4(EBP)
-; 				|	y	| <-6(EBP)
+;				|   PC	|<- SP
+;				| x[n-1]|<- 2(SP)
+;				| x[n-2]|<- 4(SP)
+;				|	n	|<- 6(SP)
 ;
 ;
-; Function takes two 32 bit signed integers in the stack and returns a 32 bit
-; signed int to the stack
+;
+; Function takes 2 fibbonacci numbers and returns the nth number away in the
+; sequence in R4. Caller cleans up stack.
 ;-------------------------------------------------------------------------------
+fib:		tst 6(SP)
+			jz return
 
-x_plus_y:	push R15
-			mov.w SP, R15
-			sub.w #4, SP
+			dec.w 6(SP)
 
-			mov.w 4(R15), R4
-			mov.w R4, -4(R15)
+			clr.w R4
 
-			mov.w 6(R15), R4
-			mov.w R4, -2(R15)
+			mov.w 4(SP), R4
+			add.w 2(SP), R4
 
-			mov.w -4(R15), R4
-			add.w -2(R15), R4
-
-
+			mov.w 2(SP), 4(SP)
+			mov.w R4, 2(SP)
+			jmp fib
 
 
 
-			mov.w R15, SP
-			pop R15
-			ret
+return:		ret
 
-
-
-
-
-
-;-------------------------------------------------------------------------------
 ; Stack Pointer definition
 ;-------------------------------------------------------------------------------
             .global __STACK_END
