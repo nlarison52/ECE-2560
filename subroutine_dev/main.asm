@@ -23,15 +23,11 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ;-------------------------------------------------------------------------------
 ; Main loop here
 ;-------------------------------------------------------------------------------
-
+			mov.w SP, R15
 			push #5
-			push #0
-			push #1
+			call #foo
 
-			call #fib
-
-
-			add.w #6, SP
+			add.w #2, SP
 
 
 
@@ -119,6 +115,47 @@ fib:		tst 6(SP)
 
 
 return:		ret
+
+
+
+
+
+;-------------------------------------------------------------------------------
+; Subroutine: foo
+; Stack Frame:
+;
+;				|	y	|<- SP/-4(BP)
+;				|	z	|<- -2(BP)
+;				| old BP|<- BP
+;				|   PC	|<- 2(BP)
+;				| 	x	|<- 4(BP)
+;
+;
+;
+;
+; Function takes 2 fibbonacci numbers and returns the nth number away in the
+; sequence in R4. Caller cleans up stack.
+;-------------------------------------------------------------------------------
+foo:		push R15
+			mov.w SP, R15
+
+			sub.w #4, SP
+
+			mov.w #2, -4(R15)
+			mov.w #4, -2(R15)
+
+			mov.w 4(R15), R4
+			add.w -4(R15), R4
+			add.w -2(R15), R4
+
+			mov.w R15, SP
+			pop R15
+			ret
+
+
+
+
+
 
 ; Stack Pointer definition
 ;-------------------------------------------------------------------------------
