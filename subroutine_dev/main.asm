@@ -23,12 +23,15 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ;-------------------------------------------------------------------------------
 ; Main loop here
 ;-------------------------------------------------------------------------------
-			mov.w SP, R15
 			push #5
-			call #foo
+			push #0
+			push #-1
+			push #-1
+			decd.w SP
+			call #x_times_y
 
-			add.w #2, SP
-
+			pop R4
+			sub.w #8, SP
 
 
 

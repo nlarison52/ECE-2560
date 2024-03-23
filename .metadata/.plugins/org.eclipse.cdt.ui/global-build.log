@@ -7623,3 +7623,839 @@ Finished building target: "subroutine_dev.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/subroutine_dev" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "subroutine_dev.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"subroutine_dev.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="subroutine_dev_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "subroutine_dev.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "subroutine_dev.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'subroutine_dev.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+2 Assembly Errors, No Assembly Warnings
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.asm", ERROR!   at line 42: [E0004] Illegal un-relocatable operand
+				push 0
+ 
+"../main.asm", ERROR!   at line 91: [E0002] Illegal mnemonic specified
+				x_times_y:
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [main.obj] Error 1
+Building file: "../midterm/main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="midterm/main.d_raw" --obj_directory="midterm"  "../midterm/main.asm"
+Finished building: "../midterm/main.asm"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+1 Assembly Error, No Assembly Warnings
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.asm", ERROR!   at line 91: [E0002] Illegal mnemonic specified
+				x_times_y:
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../midterm/Debug/main.obj" "./midterm/main.obj" "../lnk_msp430fr6989.cmd" "../midterm/lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+"../midterm/lnk_msp430fr6989.cmd", line 56: error #10263: TINYRAM memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 56: error #10264: TINYRAM memory range overlaps existing memory range TINYRAM
+"../midterm/lnk_msp430fr6989.cmd", line 57: error #10263: PERIPHERALS_8BIT memory range has already been specified
+ 
+"../midterm/lnk_msp430fr6989.cmd", line 57: error #10264: PERIPHERALS_8BIT memory range overlaps existing memory range PERIPHERALS_8BIT
+>> Compilation failure
+makefile:142: recipe for target 'project_1.out' failed
+"../midterm/lnk_msp430fr6989.cmd", line 58: error #10263: PERIPHERALS_16BIT memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 58: error #10264: PERIPHERALS_16BIT memory range overlaps existing memory range PERIPHERALS_16BIT
+"../midterm/lnk_msp430fr6989.cmd", line 59: error #10263: RAM memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 59: error #10264: RAM memory range overlaps existing memory range RAM
+"../midterm/lnk_msp430fr6989.cmd", line 60: error #10263: INFOA memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 60: error #10264: INFOA memory range overlaps existing memory range INFOA
+"../midterm/lnk_msp430fr6989.cmd", line 61: error #10263: INFOB memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 61: error #10264: INFOB memory range overlaps existing memory range INFOB
+"../midterm/lnk_msp430fr6989.cmd", line 62: error #10263: INFOC memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 62: error #10264: INFOC memory range overlaps existing memory range INFOC
+"../midterm/lnk_msp430fr6989.cmd", line 63: error #10263: INFOD memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 63: error #10264: INFOD memory range overlaps existing memory range INFOD
+"../midterm/lnk_msp430fr6989.cmd", line 64: error #10263: FRAM memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 64: error #10264: FRAM memory range overlaps existing memory range FRAM
+"../midterm/lnk_msp430fr6989.cmd", line 65: error #10263: FRAM2 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 65: error #10264: FRAM2 memory range overlaps existing memory range FRAM2
+"../midterm/lnk_msp430fr6989.cmd", line 66: error #10263: JTAGSIGNATURE memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 66: error #10264: JTAGSIGNATURE memory range overlaps existing memory range JTAGSIGNATURE
+"../midterm/lnk_msp430fr6989.cmd", line 67: error #10263: BSLSIGNATURE memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 67: error #10264: BSLSIGNATURE memory range overlaps existing memory range BSLSIGNATURE
+"../midterm/lnk_msp430fr6989.cmd", line 68: error #10263: IPESIGNATURE memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 68: error #10264: IPESIGNATURE memory range overlaps existing memory range IPESIGNATURE
+"../midterm/lnk_msp430fr6989.cmd", line 69: error #10263: INT00 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 69: error #10264: INT00 memory range overlaps existing memory range INT00
+"../midterm/lnk_msp430fr6989.cmd", line 70: error #10263: INT01 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 70: error #10264: INT01 memory range overlaps existing memory range INT01
+"../midterm/lnk_msp430fr6989.cmd", line 71: error #10263: INT02 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 71: error #10264: INT02 memory range overlaps existing memory range INT02
+"../midterm/lnk_msp430fr6989.cmd", line 72: error #10263: INT03 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 72: error #10264: INT03 memory range overlaps existing memory range INT03
+"../midterm/lnk_msp430fr6989.cmd", line 73: error #10263: INT04 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 73: error #10264: INT04 memory range overlaps existing memory range INT04
+"../midterm/lnk_msp430fr6989.cmd", line 74: error #10263: INT05 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 74: error #10264: INT05 memory range overlaps existing memory range INT05
+"../midterm/lnk_msp430fr6989.cmd", line 75: error #10263: INT06 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 75: error #10264: INT06 memory range overlaps existing memory range INT06
+"../midterm/lnk_msp430fr6989.cmd", line 76: error #10263: INT07 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 76: error #10264: INT07 memory range overlaps existing memory range INT07
+"../midterm/lnk_msp430fr6989.cmd", line 77: error #10263: INT08 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 77: error #10264: INT08 memory range overlaps existing memory range INT08
+"../midterm/lnk_msp430fr6989.cmd", line 78: error #10263: INT09 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 78: error #10264: INT09 memory range overlaps existing memory range INT09
+"../midterm/lnk_msp430fr6989.cmd", line 79: error #10263: INT10 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 79: error #10264: INT10 memory range overlaps existing memory range INT10
+"../midterm/lnk_msp430fr6989.cmd", line 80: error #10263: INT11 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 80: error #10264: INT11 memory range overlaps existing memory range INT11
+"../midterm/lnk_msp430fr6989.cmd", line 81: error #10263: INT12 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 81: error #10264: INT12 memory range overlaps existing memory range INT12
+"../midterm/lnk_msp430fr6989.cmd", line 82: error #10263: INT13 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 82: error #10264: INT13 memory range overlaps existing memory range INT13
+"../midterm/lnk_msp430fr6989.cmd", line 83: error #10263: INT14 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 83: error #10264: INT14 memory range overlaps existing memory range INT14
+"../midterm/lnk_msp430fr6989.cmd", line 84: error #10263: INT15 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 84: error #10264: INT15 memory range overlaps existing memory range INT15
+"../midterm/lnk_msp430fr6989.cmd", line 85: error #10263: INT16 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 85: error #10264: INT16 memory range overlaps existing memory range INT16
+"../midterm/lnk_msp430fr6989.cmd", line 86: error #10263: INT17 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 86: error #10264: INT17 memory range overlaps existing memory range INT17
+"../midterm/lnk_msp430fr6989.cmd", line 87: error #10263: INT18 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 87: error #10264: INT18 memory range overlaps existing memory range INT18
+"../midterm/lnk_msp430fr6989.cmd", line 88: error #10263: INT19 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 88: error #10264: INT19 memory range overlaps existing memory range INT19
+"../midterm/lnk_msp430fr6989.cmd", line 89: error #10263: INT20 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 89: error #10264: INT20 memory range overlaps existing memory range INT20
+"../midterm/lnk_msp430fr6989.cmd", line 90: error #10263: INT21 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 90: error #10264: INT21 memory range overlaps existing memory range INT21
+"../midterm/lnk_msp430fr6989.cmd", line 91: error #10263: INT22 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 91: error #10264: INT22 memory range overlaps existing memory range INT22
+"../midterm/lnk_msp430fr6989.cmd", line 92: error #10263: INT23 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 92: error #10264: INT23 memory range overlaps existing memory range INT23
+"../midterm/lnk_msp430fr6989.cmd", line 93: error #10263: INT24 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 93: error #10264: INT24 memory range overlaps existing memory range INT24
+"../midterm/lnk_msp430fr6989.cmd", line 94: error #10263: INT25 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 94: error #10264: INT25 memory range overlaps existing memory range INT25
+"../midterm/lnk_msp430fr6989.cmd", line 95: error #10263: INT26 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 95: error #10264: INT26 memory range overlaps existing memory range INT26
+"../midterm/lnk_msp430fr6989.cmd", line 96: error #10263: INT27 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 96: error #10264: INT27 memory range overlaps existing memory range INT27
+"../midterm/lnk_msp430fr6989.cmd", line 97: error #10263: INT28 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 97: error #10264: INT28 memory range overlaps existing memory range INT28
+"../midterm/lnk_msp430fr6989.cmd", line 98: error #10263: INT29 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 98: error #10264: INT29 memory range overlaps existing memory range INT29
+"../midterm/lnk_msp430fr6989.cmd", line 99: error #10263: INT30 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 99: error #10264: INT30 memory range overlaps existing memory range INT30
+"../midterm/lnk_msp430fr6989.cmd", line 100: error #10263: INT31 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 100: error #10264: INT31 memory range overlaps existing memory range INT31
+"../midterm/lnk_msp430fr6989.cmd", line 101: error #10263: INT32 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 101: error #10264: INT32 memory range overlaps existing memory range INT32
+"../midterm/lnk_msp430fr6989.cmd", line 102: error #10263: INT33 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 102: error #10264: INT33 memory range overlaps existing memory range INT33
+"../midterm/lnk_msp430fr6989.cmd", line 103: error #10263: INT34 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 103: error #10264: INT34 memory range overlaps existing memory range INT34
+"../midterm/lnk_msp430fr6989.cmd", line 104: error #10263: INT35 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 104: error #10264: INT35 memory range overlaps existing memory range INT35
+"../midterm/lnk_msp430fr6989.cmd", line 105: error #10263: INT36 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 105: error #10264: INT36 memory range overlaps existing memory range INT36
+"../midterm/lnk_msp430fr6989.cmd", line 106: error #10263: INT37 memory range has already been specified
+fatal error #99900: error limit reached; 100 errors detected
+gmake[1]: *** [project_1.out] Error 1
+gmake: *** [all] Error 2
+makefile:138: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../midterm/Debug/main.obj" "./midterm/main.obj" "../lnk_msp430fr6989.cmd" "../midterm/lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+"../midterm/lnk_msp430fr6989.cmd", line 56: error #10263: TINYRAM memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 56: error #10264: TINYRAM memory range overlaps existing memory range TINYRAM
+"../midterm/lnk_msp430fr6989.cmd", line 57: error #10263: PERIPHERALS_8BIT memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 57: error #10264: PERIPHERALS_8BIT memory range overlaps existing memory range PERIPHERALS_8BIT
+"../midterm/lnk_msp430fr6989.cmd", line 58: error #10263: PERIPHERALS_16BIT memory range has already been specified
+ 
+>> Compilation failure
+makefile:142: recipe for target 'project_1.out' failed
+"../midterm/lnk_msp430fr6989.cmd", line 58: error #10264: PERIPHERALS_16BIT memory range overlaps existing memory range PERIPHERALS_16BIT
+"../midterm/lnk_msp430fr6989.cmd", line 59: error #10263: RAM memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 59: error #10264: RAM memory range overlaps existing memory range RAM
+"../midterm/lnk_msp430fr6989.cmd", line 60: error #10263: INFOA memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 60: error #10264: INFOA memory range overlaps existing memory range INFOA
+"../midterm/lnk_msp430fr6989.cmd", line 61: error #10263: INFOB memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 61: error #10264: INFOB memory range overlaps existing memory range INFOB
+"../midterm/lnk_msp430fr6989.cmd", line 62: error #10263: INFOC memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 62: error #10264: INFOC memory range overlaps existing memory range INFOC
+"../midterm/lnk_msp430fr6989.cmd", line 63: error #10263: INFOD memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 63: error #10264: INFOD memory range overlaps existing memory range INFOD
+"../midterm/lnk_msp430fr6989.cmd", line 64: error #10263: FRAM memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 64: error #10264: FRAM memory range overlaps existing memory range FRAM
+"../midterm/lnk_msp430fr6989.cmd", line 65: error #10263: FRAM2 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 65: error #10264: FRAM2 memory range overlaps existing memory range FRAM2
+"../midterm/lnk_msp430fr6989.cmd", line 66: error #10263: JTAGSIGNATURE memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 66: error #10264: JTAGSIGNATURE memory range overlaps existing memory range JTAGSIGNATURE
+"../midterm/lnk_msp430fr6989.cmd", line 67: error #10263: BSLSIGNATURE memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 67: error #10264: BSLSIGNATURE memory range overlaps existing memory range BSLSIGNATURE
+"../midterm/lnk_msp430fr6989.cmd", line 68: error #10263: IPESIGNATURE memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 68: error #10264: IPESIGNATURE memory range overlaps existing memory range IPESIGNATURE
+"../midterm/lnk_msp430fr6989.cmd", line 69: error #10263: INT00 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 69: error #10264: INT00 memory range overlaps existing memory range INT00
+"../midterm/lnk_msp430fr6989.cmd", line 70: error #10263: INT01 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 70: error #10264: INT01 memory range overlaps existing memory range INT01
+"../midterm/lnk_msp430fr6989.cmd", line 71: error #10263: INT02 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 71: error #10264: INT02 memory range overlaps existing memory range INT02
+"../midterm/lnk_msp430fr6989.cmd", line 72: error #10263: INT03 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 72: error #10264: INT03 memory range overlaps existing memory range INT03
+"../midterm/lnk_msp430fr6989.cmd", line 73: error #10263: INT04 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 73: error #10264: INT04 memory range overlaps existing memory range INT04
+"../midterm/lnk_msp430fr6989.cmd", line 74: error #10263: INT05 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 74: error #10264: INT05 memory range overlaps existing memory range INT05
+"../midterm/lnk_msp430fr6989.cmd", line 75: error #10263: INT06 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 75: error #10264: INT06 memory range overlaps existing memory range INT06
+"../midterm/lnk_msp430fr6989.cmd", line 76: error #10263: INT07 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 76: error #10264: INT07 memory range overlaps existing memory range INT07
+"../midterm/lnk_msp430fr6989.cmd", line 77: error #10263: INT08 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 77: error #10264: INT08 memory range overlaps existing memory range INT08
+"../midterm/lnk_msp430fr6989.cmd", line 78: error #10263: INT09 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 78: error #10264: INT09 memory range overlaps existing memory range INT09
+"../midterm/lnk_msp430fr6989.cmd", line 79: error #10263: INT10 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 79: error #10264: INT10 memory range overlaps existing memory range INT10
+"../midterm/lnk_msp430fr6989.cmd", line 80: error #10263: INT11 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 80: error #10264: INT11 memory range overlaps existing memory range INT11
+"../midterm/lnk_msp430fr6989.cmd", line 81: error #10263: INT12 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 81: error #10264: INT12 memory range overlaps existing memory range INT12
+"../midterm/lnk_msp430fr6989.cmd", line 82: error #10263: INT13 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 82: error #10264: INT13 memory range overlaps existing memory range INT13
+"../midterm/lnk_msp430fr6989.cmd", line 83: error #10263: INT14 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 83: error #10264: INT14 memory range overlaps existing memory range INT14
+"../midterm/lnk_msp430fr6989.cmd", line 84: error #10263: INT15 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 84: error #10264: INT15 memory range overlaps existing memory range INT15
+"../midterm/lnk_msp430fr6989.cmd", line 85: error #10263: INT16 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 85: error #10264: INT16 memory range overlaps existing memory range INT16
+"../midterm/lnk_msp430fr6989.cmd", line 86: error #10263: INT17 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 86: error #10264: INT17 memory range overlaps existing memory range INT17
+"../midterm/lnk_msp430fr6989.cmd", line 87: error #10263: INT18 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 87: error #10264: INT18 memory range overlaps existing memory range INT18
+"../midterm/lnk_msp430fr6989.cmd", line 88: error #10263: INT19 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 88: error #10264: INT19 memory range overlaps existing memory range INT19
+"../midterm/lnk_msp430fr6989.cmd", line 89: error #10263: INT20 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 89: error #10264: INT20 memory range overlaps existing memory range INT20
+"../midterm/lnk_msp430fr6989.cmd", line 90: error #10263: INT21 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 90: error #10264: INT21 memory range overlaps existing memory range INT21
+"../midterm/lnk_msp430fr6989.cmd", line 91: error #10263: INT22 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 91: error #10264: INT22 memory range overlaps existing memory range INT22
+"../midterm/lnk_msp430fr6989.cmd", line 92: error #10263: INT23 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 92: error #10264: INT23 memory range overlaps existing memory range INT23
+"../midterm/lnk_msp430fr6989.cmd", line 93: error #10263: INT24 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 93: error #10264: INT24 memory range overlaps existing memory range INT24
+"../midterm/lnk_msp430fr6989.cmd", line 94: error #10263: INT25 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 94: error #10264: INT25 memory range overlaps existing memory range INT25
+"../midterm/lnk_msp430fr6989.cmd", line 95: error #10263: INT26 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 95: error #10264: INT26 memory range overlaps existing memory range INT26
+"../midterm/lnk_msp430fr6989.cmd", line 96: error #10263: INT27 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 96: error #10264: INT27 memory range overlaps existing memory range INT27
+"../midterm/lnk_msp430fr6989.cmd", line 97: error #10263: INT28 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 97: error #10264: INT28 memory range overlaps existing memory range INT28
+"../midterm/lnk_msp430fr6989.cmd", line 98: error #10263: INT29 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 98: error #10264: INT29 memory range overlaps existing memory range INT29
+"../midterm/lnk_msp430fr6989.cmd", line 99: error #10263: INT30 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 99: error #10264: INT30 memory range overlaps existing memory range INT30
+"../midterm/lnk_msp430fr6989.cmd", line 100: error #10263: INT31 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 100: error #10264: INT31 memory range overlaps existing memory range INT31
+"../midterm/lnk_msp430fr6989.cmd", line 101: error #10263: INT32 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 101: error #10264: INT32 memory range overlaps existing memory range INT32
+"../midterm/lnk_msp430fr6989.cmd", line 102: error #10263: INT33 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 102: error #10264: INT33 memory range overlaps existing memory range INT33
+"../midterm/lnk_msp430fr6989.cmd", line 103: error #10263: INT34 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 103: error #10264: INT34 memory range overlaps existing memory range INT34
+"../midterm/lnk_msp430fr6989.cmd", line 104: error #10263: INT35 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 104: error #10264: INT35 memory range overlaps existing memory range INT35
+"../midterm/lnk_msp430fr6989.cmd", line 105: error #10263: INT36 memory range has already been specified
+"../midterm/lnk_msp430fr6989.cmd", line 105: error #10264: INT36 memory range overlaps existing memory range INT36
+"../midterm/lnk_msp430fr6989.cmd", line 106: error #10263: INT37 memory range has already been specified
+fatal error #99900: error limit reached; 100 errors detected
+gmake[1]: *** [project_1.out] Error 1
+gmake: *** [all] Error 2
+makefile:138: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'project_1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+1 Assembly Error, No Assembly Warnings
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.asm", ERROR!   at line 96: [E0300] Symbol main has already been defined
+	main:		bit.w 0(SP), 8(SP)
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'project_1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project subroutine_dev ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'subroutine_dev.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+1 Assembly Error, No Assembly Warnings
+ 
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'main.obj' failed
+"../main.asm", ERROR!   at line 98: [E0004] Illegal un-relocatable operand
+				mov.w 1, 2(SP)
+ 
+ 
+Errors in Source - Assembler Aborted
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'project_1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'project_1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+gmake[1]: 'project_1.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project project_1 ****
+
+/Applications/ti/ccs1260/ccs/utils/bin/gmake -k -j 3 all -O 
+ 
+Building file: "../main.asm"
+Invoking: MSP430 Compiler
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --include_path="/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" --include_path="/Users/nlarison/workspace_v12/project_1" --include_path="/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.asm"
+Finished building: "../main.asm"
+ 
+Building target: "project_1.out"
+Invoking: MSP430 Linker
+"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/cl430" -vmspx --code_model=small --data_model=small --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR6989__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"project_1.map" --heap_size=0 --stack_size=0 --cinit_hold_wdt=on -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1260/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/lib" -i"/Applications/ti/ccs1260/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="project_1_linkInfo.xml" --entry_point=RESET --use_hw_mpy=F5 -o "project_1.out" "./main.obj" "../lnk_msp430fr6989.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+Finished building target: "project_1.out"
+ 
+
+**** Build Finished ****
