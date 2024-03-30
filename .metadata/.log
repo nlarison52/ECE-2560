@@ -6113,3 +6113,6 @@ Binding(ALT+COMMAND+R,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.cdt.ui.cViewScope,,cocoa,system)
+
+!ENTRY org.eclipse.core.resources 4 566 2024-03-30 13:37:23.825
+!MESSAGE Workspace was not properly initialized or has already shutdown.
