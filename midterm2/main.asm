@@ -35,10 +35,6 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ;-------------------------------------------------------------------------------
 ; Main loop here
 ;-------------------------------------------------------------------------------
-
-
-
-
 			bic.b #BIT0, &P1OUT				;Clear Red
 			bis.b #BIT0, &P1DIR				;Set direction
 
@@ -66,12 +62,7 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 			bis.b #BIT7, &P9OUT
 			jmp loop
 
-first_red:	bis.b #BIT0, &P1OUT
-
-
-
-
-
+first_red:	bis.b #BIT0, &P1OUT				;Sets red first in 0 first case
 
 loop:		jmp loop
 			nop
