@@ -29,7 +29,9 @@ StopWDT     mov.w   #WDTPW|WDTHOLD,&WDTCTL  ; Stop watchdog timer
 ; Main loop here
 ;-------------------------------------------------------------------------------
 
-
+			mov.w #234, R12
+			mov.w #3, R10
+			call #x
 
 main:		jmp main
 			nop
@@ -37,6 +39,16 @@ main:		jmp main
 
 
 
+x:
+			push R10
+y:			tst.w R10
+			jz fin
+			rra.w R12
+			dec.w R10
+			jnz y
+
+fin:		pop R10
+			ret
 
 ;-------------------------------------------------------------------------------
 ; Stack Pointer definition
